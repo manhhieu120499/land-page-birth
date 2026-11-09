@@ -603,16 +603,22 @@
 }
 
 .header-hydrangea {
-  width: 92px;
-  height: 78px;
-  object-fit: contain;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  object-position: 52% 38%;
+  border-radius: 50%;
+  border: 3px solid #ffc2d1;
+  background: #fff0f3;
   flex-shrink: 0;
-  filter: drop-shadow(0 6px 12px rgba(230, 57, 102, 0.22));
-  animation: hydrangeaSway 3.6s ease-in-out infinite alternate;
+  box-shadow:
+    0 8px 18px rgba(230, 57, 102, 0.22),
+    0 0 0 4px rgba(255, 255, 255, 0.85);
+  animation: hydrangeaSwayLeft 3.6s ease-in-out infinite alternate;
 }
 
 .header-hydrangea--right {
-  animation-delay: 0.9s;
+  animation: hydrangeaSwayRight 3.6s ease-in-out 0.9s infinite alternate;
 }
 
 .recipient-age-pill {
@@ -1266,12 +1272,21 @@
   }
 }
 
-@keyframes hydrangeaSway {
+@keyframes hydrangeaSwayLeft {
   0% {
-    transform: translateY(0) rotate(-4deg) scale(0.98);
+    transform: translateY(0) rotate(-6deg) scale(0.98);
   }
   100% {
-    transform: translateY(-4px) rotate(4deg) scale(1.03);
+    transform: translateY(-4px) rotate(3deg) scale(1.03);
+  }
+}
+
+@keyframes hydrangeaSwayRight {
+  0% {
+    transform: scaleX(-1) translateY(0) rotate(-6deg) scale(0.98);
+  }
+  100% {
+    transform: scaleX(-1) translateY(-4px) rotate(3deg) scale(1.03);
   }
 }
 
@@ -1335,8 +1350,8 @@
   }
 
   .header-hydrangea {
-    width: 68px;
-    height: 58px;
+    width: 64px;
+    height: 64px;
   }
 
   .music-track-title {

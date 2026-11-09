@@ -53,8 +53,8 @@ export const birthdayConfig: BirthdayConfig = {
   ageBadge: "Sweet & Shining Day 🎂",
   mainPhotoUrl: "/anh_3.jpg",
   mainPhotoCaption: "Nụ cười tỏa nắng nhất hôm nay ✨",
-  headerLeftFlowerUrl: "/hydrangea_left.svg",
-  headerRightFlowerUrl: "/hydrangea_right.svg",
+  headerLeftFlowerUrl: "/anh_4.webp",
+  headerRightFlowerUrl: "/anh_4.webp",
   loadingDurationMs: 4200,
   loadingMessages: [
     { threshold: 0, text: "Đang thắp nến trên bánh sinh nhật... 🕯️" },
