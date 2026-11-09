@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="260" height="220">
+  <defs>
+    <radialGradient id="hydGlowL" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd6e8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffd6e8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leafGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#74c69d"/>
+      <stop offset="100%" stop-color="#40916c"/>
+    </linearGradient>
+    <linearGradient id="leafLightL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#95d5b2"/>
+      <stop offset="100%" stop-color="#52b788"/>
+    </linearGradient>
+    <radialGradient id="petalDeepL" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffb3c6"/>
+      <stop offset="100%" stop-color="#ff4d6d"/>
+    </radialGradient>
+    <radialGradient id="petalMidL" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffe5ec"/>
+      <stop offset="100%" stop-color="#ff758f"/>
+    </radialGradient>
+    <radialGradient id="petalSoftL" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fff0f3"/>
+      <stop offset="100%" stop-color="#ff8fab"/>
+    </radialGradient>
+    <radialGradient id="petalBlushL" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffb3c6"/>
+    </radialGradient>
+
+    <!-- Single 4-petal Hydrangea floret definitions -->
+    <g id="floretDeep">
+      <ellipse cx="0" cy="-12" rx="9.5" ry="11" fill="url(#petalDeepL)" stroke="#ff4d6d" stroke-width="0.6"/>
+      <ellipse cx="0" cy="12" rx="9.5" ry="11" fill="url(#petalDeepL)" stroke="#ff4d6d" stroke-width="0.6"/>
+      <ellipse cx="-12" cy="0" rx="11" ry="9.5" fill="url(#petalDeepL)" stroke="#ff4d6d" stroke-width="0.6"/>
+      <ellipse cx="12" cy="0" rx="11" ry="9.5" fill="url(#petalDeepL)" stroke="#ff4d6d" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="3.2" fill="#fff3b0" stroke="#f77f00" stroke-width="0.8"/>
+    </g>
+    <g id="floretMid">
+      <ellipse cx="0" cy="-12" rx="9.5" ry="11" fill="url(#petalMidL)" stroke="#ff758f" stroke-width="0.6"/>
+      <ellipse cx="0" cy="12" rx="9.5" ry="11" fill="url(#petalMidL)" stroke="#ff758f" stroke-width="0.6"/>
+      <ellipse cx="-12" cy="0" rx="11" ry="9.5" fill="url(#petalMidL)" stroke="#ff758f" stroke-width="0.6"/>
+      <ellipse cx="12" cy="0" rx="11" ry="9.5" fill="url(#petalMidL)" stroke="#ff758f" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="3.2" fill="#ffe5ec" stroke="#ff4d6d" stroke-width="0.8"/>
+    </g>
+    <g id="floretSoft">
+      <ellipse cx="0" cy="-11" rx="9" ry="10.5" fill="url(#petalSoftL)" stroke="#ff8fab" stroke-width="0.6"/>
+      <ellipse cx="0" cy="11" rx="9" ry="10.5" fill="url(#petalSoftL)" stroke="#ff8fab" stroke-width="0.6"/>
+      <ellipse cx="-11" cy="0" rx="10.5" ry="9" fill="url(#petalSoftL)" stroke="#ff8fab" stroke-width="0.6"/>
+      <ellipse cx="11" cy="0" rx="10.5" ry="9" fill="url(#petalSoftL)" stroke="#ff8fab" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="3" fill="#fff3b0" stroke="#f4a261" stroke-width="0.8"/>
+    </g>
+    <g id="floretBlush">
+      <ellipse cx="0" cy="-10" rx="8.5" ry="10" fill="url(#petalBlushL)" stroke="#ffb3c6" stroke-width="0.6"/>
+      <ellipse cx="0" cy="10" rx="8.5" ry="10" fill="url(#petalBlushL)" stroke="#ffb3c6" stroke-width="0.6"/>
+      <ellipse cx="-10" cy="0" rx="10" ry="8.5" fill="url(#petalBlushL)" stroke="#ffb3c6" stroke-width="0.6"/>
+      <ellipse cx="10" cy="0" rx="10" ry="8.5" fill="url(#petalBlushL)" stroke="#ffb3c6" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="2.8" fill="#ffd166" stroke="#ff758f" stroke-width="0.8"/>
+    </g>
+  </defs>
+
+  <!-- Soft ambient halo -->
+  <circle cx="130" cy="115" r="102" fill="url(#hydGlowL)"/>
+
+  <!-- Serrated Hydrangea Leaves -->
+  <g transform="translate(52, 148) rotate(-32)">
+    <path d="M -45,0 C -25,-28 20,-28 45,0 C 20,28 -25,28 -45,0 Z" fill="url(#leafGradL)"/>
+    <path d="M -40,0 L 40,0 M -15,0 L -25,-12 M 5,0 L -5,-14 M 22,0 L 12,-11 M -10,0 L -20,12 M 10,0 L 0,14" stroke="#b7e4c7" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(196, 152) rotate(24)">
+    <path d="M -44,0 C -22,-26 22,-26 44,0 C 22,26 -22,26 -44,0 Z" fill="url(#leafLightL)"/>
+    <path d="M -38,0 L 38,0 M -12,0 L -22,-11 M 8,0 L -2,-13 M 24,0 L 14,-10 M -8,0 L -18,11 M 12,0 L 2,13" stroke="#d8f3dc" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(115, 42) rotate(-78) scale(0.82)">
+    <path d="M -40,0 C -20,-24 20,-24 40,0 C 20,24 -20,24 -40,0 Z" fill="url(#leafLightL)"/>
+    <path d="M -34,0 L 34,0" stroke="#d8f3dc" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Hydrangea Spherical Cluster (Back Layer) -->
+  <use href="#floretDeep" transform="translate(76, 98) rotate(12)"/>
+  <use href="#floretDeep" transform="translate(178, 96) rotate(-18)"/>
+  <use href="#floretDeep" transform="translate(88, 154) rotate(28)"/>
+  <use href="#floretDeep" transform="translate(172, 148) rotate(-22)"/>
+  <use href="#floretMid" transform="translate(128, 62) rotate(8)"/>
+  <use href="#floretMid" transform="translate(96, 72) rotate(-15)"/>
+  <use href="#floretMid" transform="translate(160, 74) rotate(22)"/>
+
+  <!-- Hydrangea Spherical Cluster (Middle Layer) -->
+  <use href="#floretSoft" transform="translate(64, 126) rotate(-12)"/>
+  <use href="#floretSoft" transform="translate(194, 124) rotate(19)"/>
+  <use href="#floretMid" transform="translate(128, 166) rotate(35)"/>
+  <use href="#floretSoft" transform="translate(102, 134) rotate(-8)"/>
+  <use href="#floretSoft" transform="translate(154, 134) rotate(14)"/>
+  <use href="#floretMid" transform="translate(104, 98) rotate(24)"/>
+  <use href="#floretMid" transform="translate(152, 98) rotate(-19)"/>
+
+  <!-- Hydrangea Spherical Cluster (Front Crown Highlight Layer) -->
+  <use href="#floretBlush" transform="translate(82, 114) rotate(18)"/>
+  <use href="#floretBlush" transform="translate(174, 116) rotate(-14)"/>
+  <use href="#floretBlush" transform="translate(128, 86) rotate(-6)"/>
+  <use href="#floretBlush" transform="translate(116, 146) rotate(15)"/>
+  <use href="#floretBlush" transform="translate(144, 144) rotate(-24)"/>
+  <use href="#floretSoft" transform="translate(128, 116) rotate(4) scale(1.08)"/>
+
+  <!-- Dewdrops / Sparkles -->
+  <circle cx="52" cy="78" r="3.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="206" cy="84" r="3" fill="#ffd166" opacity="0.85"/>
+  <circle cx="142" cy="184" r="2.8" fill="#ffffff" opacity="0.9"/>
+</svg>

@@ -1,0 +1,50 @@
+:root {
+  --font-sans: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --text-main: #4a2545;
+  --text-muted: #7d4e76;
+  --accent-pink: #ff4d6d;
+  --accent-rose: #ff7597;
+  --accent-soft: #ffb3c6;
+  --accent-gold: #ffd166;
+  --card-glass: rgba(255, 255, 255, 0.88);
+  --card-border: rgba(255, 143, 171, 0.55);
+
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-main);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+body {
+  background: radial-gradient(
+    circle at 50% 35%,
+    #fff5f8 0%,
+    #ffe3ec 48%,
+    #ffd0e0 100%
+  );
+}
+
+button {
+  font-family: inherit;
+}
